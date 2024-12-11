@@ -1,0 +1,14 @@
+Autobuz: 1, true, euro6, Mercedes, true, 2019, alb, 54, 52
+Autobuz: 2, false, euro4, Volvo, true, 2017, alb, 60, 40
+Autobuz: 3, false, euro2, Iveco, true, 2013, negru, 50, 33
+Autobuz: 4, true, euro6, Iveco, true, 2020, gri, 35, 20
+Autobuz: 5, true, euro6, Scania, true, 2019, alb, 60, 40
+Motocicleta: 1, euro5, 2, true, bmw, 2019, albastra, 2000, false
+Motocicleta: 2, euro4, 3, false, Harley Davidson, 2000, rosie, 2000, false
+Motocicleta: 3, euro5 ,4, false, Honda, 2005, rosie, 2000, false
+Motocicleta: 4, euro4, 4, false, Kawasaki, 2000, maro, 2000, true
+Motocicleta: 5, euro5, 2, false, Yamaha, 2012, neagra, 1200, false
+Vehicul: 42, SantaCruz, 2024, galbena
+Vehicul: 78, EcoRide, 2022, Alb
+Vehicul: 47, Kawasaki Ninja, 2019, Verde
+Vehicul: 94, Toyota RAV4, 2021, Gri

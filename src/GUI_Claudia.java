@@ -123,11 +123,13 @@ public class GUI_Claudia extends JFrame {
                 textArea.setText("");
             }
         });
-        citestedinfisierButton.addActionListener(new ActionListener() {
+
+        citestedinfisierButton.addActionListener(new ActionListener() {int i=0;
             @Override
             public void actionPerformed(ActionEvent e) {
-                    try{
-                        FileInputStream fin = new FileInputStream("C:\\Users\\nasta\\Downloads\\ProiectPOO\\Proiect-POO-Vehicule-GR2\\src\\file_Claudia.txt");
+                if(i<1) {
+                    try {
+                        FileInputStream fin = new FileInputStream("C:\\Users\\A\\IdeaProjects\\ProiectPooUltimaTema\\src\\vehiculeC");
                         BufferedReader br = new BufferedReader(new InputStreamReader(fin));
                         String linie;
 
@@ -137,18 +139,20 @@ public class GUI_Claudia extends JFrame {
                                 autobuzele.add(new Autobuz(Integer.parseInt(valori[0]), Boolean.parseBoolean(valori[1]), valori[2], valori[3], Boolean.parseBoolean(valori[4]), Integer.parseInt(valori[5]), valori[6], Integer.parseInt(valori[7]), Integer.parseInt(valori[8])));
                             } else if (linie.startsWith("Motocicleta: ")) {
                                 String[] valori = linie.split(": ")[1].split(", ");
-                                moto.add(new Motocicleta(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), Boolean.parseBoolean(valori[3]), valori[4], Integer.parseInt(valori[5]), valori[6], Integer.parseInt(valori[7]),Boolean.parseBoolean(valori[8])));
+                                moto.add(new Motocicleta(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), Boolean.parseBoolean(valori[3]), valori[4], Integer.parseInt(valori[5]), valori[6], Integer.parseInt(valori[7]), Boolean.parseBoolean(valori[8])));
                             } else if (linie.startsWith("Vehicul: ")) {
                                 String[] valori = linie.split(": ")[1].split(", ");
-                                vehicule2.add(new Vehicul(Integer.parseInt(valori[0]),valori[1],Integer.parseInt(valori[2]),valori[3]));
+                                vehicule2.add(new Vehicul(Integer.parseInt(valori[0]), valori[1], Integer.parseInt(valori[2]), valori[3]));
                             }
                         }
-                    }
-                    catch (
+                    } catch (
                             IOException f) {
                         System.out.println("[EROARE!] " + f.getMessage());
                     }
-
+                    i=i+1;}
+                else {ArrayList<Autobuz> autobuzele = Autobuz.getListaAutobuze();
+                    ArrayList<Motocicleta> moto = Motocicleta.getListaMotociclete();
+                    ArrayList<Vehicul> vehicule2 =Vehicul.getListaVehicule();}
             }
         });
         savebutton.addActionListener(new ActionListener() {
