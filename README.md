@@ -1,6 +1,6 @@
-# Proiect-POO-Vehicule-GR2 
-Proiect realizat de: 
-Mirea Cristian Andrei 
-Munteanu Vlad-Ioan 
-Nastasache Claudia 
-Radu Ion 
+Proiect POO Vehicule Grupa 2 
+Proiect Realizat de:
+Mirea Cristian Andrei
+Munteanu Vlad-Ioan
+Nastasache Claudia
+El Comandante Radu Ion
